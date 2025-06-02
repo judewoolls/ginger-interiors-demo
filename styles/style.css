@@ -557,7 +557,11 @@ i::after {
 
 @media screen and (max-width: 992px) {
     .hero {
-        background-size: auto; /* Adjust for smaller screens */
+        background-size: contain; /* Adjust for smaller screens */
+        background-size: 100% 100%; /* Ensure the background covers the entire area */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent repeating the background image */
+        background-attachment: scroll; /* Disable fixed background attachment for smaller screens */
     }
     
 }
